@@ -24,7 +24,7 @@ func init() {
 	flag.StringVar(&dnsServer, "dns", "1.1.1.1", "set the DNS server to query from")
 	flag.Usage = func() {
 		fmt.Fprintf(flag.CommandLine.Output(), "Usage of %s:\n", os.Args[0])
-		fmt.Fprintf(flag.CommandLine.Output(), "%s [-v] host.name...\n", os.Args[0])
+		fmt.Fprintf(flag.CommandLine.Output(), "%s [-h] [-v] [-dns 1.2.3.4] host.name...\n", os.Args[0])
 		flag.PrintDefaults()
 	}
 }
